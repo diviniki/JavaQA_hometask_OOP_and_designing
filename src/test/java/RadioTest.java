@@ -24,7 +24,7 @@ public class RadioTest {
         cond.setCurrentStation(-1);
 
         int expected = 0;
-        int actual = cond.currentStation;
+        int actual = cond.getCurrentStation();
 
         Assertions.assertEquals(expected, actual);
     }
@@ -36,7 +36,7 @@ public class RadioTest {
         cond.setCurrentStation(10);
 
         int expected = 0;
-        int actual = cond.currentStation;
+        int actual = cond.getCurrentStation();
 
         Assertions.assertEquals(expected, actual);
     }
@@ -113,7 +113,7 @@ public class RadioTest {
         cond.setCurrentVolume(-5);
 
         int expected = 0;
-        int actual = cond.currentVolume;
+        int actual = cond.getCurrentVolume();
 
         Assertions.assertEquals(expected, actual);
     }
@@ -125,7 +125,7 @@ public class RadioTest {
         cond.setCurrentVolume(101);
 
         int expected = 0;
-        int actual = cond.currentVolume;
+        int actual = cond.getCurrentVolume();
 
         Assertions.assertEquals(expected, actual);
     }
@@ -138,7 +138,7 @@ public class RadioTest {
         cond.increaseVolume();
 
         int expected = 51;
-        int actual = cond.currentVolume;
+        int actual = cond.getCurrentVolume();
 
         Assertions.assertEquals(expected, actual);
     }
@@ -151,7 +151,7 @@ public class RadioTest {
         cond.increaseVolume();
 
         int expected = 100;
-        int actual = cond.currentVolume;
+        int actual = cond.getCurrentVolume();
 
         Assertions.assertEquals(expected, actual);
     }
@@ -164,7 +164,7 @@ public class RadioTest {
         cond.decreaseVolume();
 
         int expected = 99;
-        int actual = cond.currentVolume;
+        int actual = cond.getCurrentVolume();
 
         Assertions.assertEquals(expected, actual);
     }
@@ -177,7 +177,7 @@ public class RadioTest {
         cond.decreaseVolume();
 
         int expected = 0;
-        int actual = cond.currentVolume;
+        int actual = cond.getCurrentVolume();
 
         Assertions.assertEquals(expected, actual);
     }

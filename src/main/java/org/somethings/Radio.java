@@ -1,9 +1,11 @@
 package org.somethings;
 
 public class Radio {
-    // 1 Station
-    // просто заводим переменную currentStation
-    public int currentStation;
+
+    private int currentStation; // просто заводим переменную currentStation
+
+    private int currentVolume;  // просто заводим переменную currentStation
+
 
     // с помощью этого метода получаем запись для использования в других шаблонах
     public int getCurrentStation() {
@@ -36,12 +38,6 @@ public class Radio {
         }
         else currentStation = 9;
     }
-
-
-    // 2 Volume
-
-    // просто заводим переменную currentStation
-    public int currentVolume;
 
     // с помощью этого метода получаем запись для использования в других шаблонах
     public int getCurrentVolume() {
